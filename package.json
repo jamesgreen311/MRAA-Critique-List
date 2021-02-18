@@ -1,0 +1,22 @@
+{
+  "name": "critique-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesgreen311/MRAA-Critique-List.git"
+  },
+  "author": "James Green",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesgreen311/MRAA-Critique-List/issues"
+  },
+  "homepage": "https://github.com/jamesgreen311/MRAA-Critique-List#readme",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.24"
+  }
+}
