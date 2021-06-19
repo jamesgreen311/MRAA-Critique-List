@@ -4,11 +4,11 @@ const ssIdTest = "11mfnGVNA2PhCs5hsp5-bmKhndv7nFg-ZiVVKf1caTqg"
 const ss = SpreadsheetApp.openById(ssIdLive);
 const ssId = (mode=="test") ? ssIdTest : ssIdLive;
 const wsName = (mode=="test") ? "Sheet1" : "Member Directory";
-const statusCol = 3;
+const statusCol = 4;
 
 function doGet() {
     const ws = ss.getSheetByName(wsName);  
-    const data = ws.getRange("A3:J"+ws.getLastRow()).getValues();
+    const data = ws.getRange("A2:J"+ws.getLastRow()).getValues();
     const headers = data.shift(); // remove header row and put in new array
 
     const jsonArray = data.map(r => {
